@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variables */
+
+:root{
+    --primary-color: #cc0022;
+    --primary-color-dark: #9a001a;
+    --secondary-color: #ffcf76;
+    --text-dark: #000000;
+    --text-light: #767268;
+    --extra-light: #ffffff;
+    --max-width: 90%
+}
+
+/* Universal */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Standard rules */
+
+.section-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 78%;
+    margin: 5rem 4rem 5rem 2rem;
+    padding: 5rem 3rem;
+    height: 70%;
+}
+
+.section-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+.section-title{
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom:  2rem;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.section-subtitle{
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+}
+
+.btn{
+    padding: 0.75rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 4rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: var(--primary-color-dark);
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: "Monsterrat", sans-serif;
+    background-color: var(--secondary-color);
+}
+
+.section-container > button{
+    width: 10rem;
+}
+
+.section-container .section-title{
+    width: 100%;
+}
+
+/* NAVBAR START */
+
+nav{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.nav-logo{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3%;
+}
+
+.nav-logo > img{
+    width: 3rem;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid var(--primary-color);
+}
+
+.link a{
+    margin: 0 2rem;
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+.link a:hover{
+    color: var(--primary-color);
+}
+/* NAVBAR END */
+
+/* COVER */
+
+#subtitle-cover{
+    font-size: 1.2rem;
+    width: 60%;
+}
+
+/* COVER IMG */
+.cover-img{
+    display: block;
+    max-width: 40%;
+    position: absolute;
+    right: 8%;
+    top: 32%;
+    z-index: 0;
+}
+/* COVER END */
+
+/* BANNER */
+.banner{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding: 0.5rem;
+    margin-top: 7rem;
+    height: 3rem;
+    border: 1px solid var(--primary-color);
+    border-left: none;
+    border-right: none;
+}
+
+.banner img{
+    width: 80%;
+}
+
+.sloganBao{
+    display: flex;
+    justify-content: center;
+}
+/* BANNER END */
+
+/* ABOUT START */
+#aboutContainer{
+    display: grid;
+    margin-top: 1rem;
+    grid-template: 1fr / repeat(2, 1fr);
+    justify-items: center;
+    margin: auto;
+    gap: 2rem;
+}
+
+#aboutTitle{
+    font-size: 4rem;
+}
+
+#aboutContainer > img{
+    width: 45%;
+    display: inline;
+}
+
+.aboutRight img{
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+#aboutSubtitle{
+    width: 90%
+}
+/* ABOUT END */
+
+/* POPULAR START */
+.popular-title{
+    font-size: 3rem;
+    margin-left: 80px;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+.popular-grid{
+    margin: 0 8%;
+    padding: 1rem;
+    justify-items: center;
+    gap: 1rem;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.popular-card{
+    padding: 2rem;
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+}
+
+.popular-card img{
+    width: 100%;
+}
+
+.popular-card h3{
+    margin: 0.5rem 0;
+    color: var(--primary-color);
+}
+
+.popular-card .btn{
+    margin: 1rem 0 0.5rem 0;
+}
+/* POPULAR END */
+
+/* FOOTER START */
+footer{
+    width: 100%;
+    background-color: var(--primary-color-dark);
+    display: flex;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+
+.footer-logo, .footer-icons{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo img{
+    width: 40%;
+}
+
+.instagram{
+    background-image: url(/assets/instagram-with-circle.svg);
+    width: 20%;
+    background-repeat: no-repeat;
+}
+
+.footer-icons i{
+    font-size: 3rem;
+    color: var(--text-dark);
+}
+
+.footer-icons a{
+    width: 3rem;
+    text-align: center;
+}
+
+.footer-icons svg{
+    position: relative;
+    top: 0.4rem;
+    width: 2.5rem;
+    height: 48px;
+}
+/* FOOTER END */
